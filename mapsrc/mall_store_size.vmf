@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "299"
+	"mapversion" "303"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "299"
+	"mapversion" "303"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -753,7 +753,7 @@ world
 				"v" "-220 416 -364"
 				"v" "220 416 -364"
 			}
-			"material" "PLASTER/PLASTER_INT_12"
+			"material" "MALL_MEMBER/FIGARDO/PLASTER_INT_12"
 			"uaxis" "[-1 -0 0 272] 0.25"
 			"vaxis" "[0 -0 -1 -324.013] 0.2344"
 			"rotation" "0"
@@ -1207,7 +1207,7 @@ world
 				"v" "-112 304 -556"
 				"v" "218 304 -556"
 			}
-			"material" "PLASTER/PLASTER_INT_12"
+			"material" "MALL_MEMBER/FIGARDO/PLASTER_INT_12"
 			"uaxis" "[1 0 0 -96] 0.25"
 			"vaxis" "[-0 0 -1 -324.013] 0.2344"
 			"rotation" "0"
@@ -3849,7 +3849,7 @@ world
 				"v" "220 416 -556"
 				"v" "220 296 -556"
 			}
-			"material" "BUILDINGS/CARPET004"
+			"material" "MALL_MEMBER/FIGARDO/CARPET004"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -4139,7 +4139,7 @@ world
 				"v" "-218 288 -364"
 				"v" "-218 416 -364"
 			}
-			"material" "PLASTER/PLASTER_INT_12"
+			"material" "MALL_MEMBER/FIGARDO/PLASTER_INT_12"
 			"uaxis" "[0 -1 0 248] 0.25"
 			"vaxis" "[0 0 -1 -324.013] 0.2344"
 			"rotation" "0"
@@ -4357,7 +4357,7 @@ world
 				"v" "218 416 -364"
 				"v" "218 288 -364"
 			}
-			"material" "PLASTER/PLASTER_INT_12"
+			"material" "MALL_MEMBER/FIGARDO/PLASTER_INT_12"
 			"uaxis" "[-0 1 0 -216] 0.25"
 			"vaxis" "[-0 0 -1 -324.014] 0.2344"
 			"rotation" "0"
@@ -4747,7 +4747,7 @@ world
 				"v" "-218 304 -556"
 				"v" "-176 304 -556"
 			}
-			"material" "PLASTER/PLASTER_INT_12"
+			"material" "MALL_MEMBER/FIGARDO/PLASTER_INT_12"
 			"uaxis" "[1 0 0 -96] 0.25"
 			"vaxis" "[-0 0 -1 -324.013] 0.2344"
 			"rotation" "0"
@@ -4865,7 +4865,7 @@ world
 				"v" "-176 304 -452"
 				"v" "-112 304 -452"
 			}
-			"material" "PLASTER/PLASTER_INT_12"
+			"material" "MALL_MEMBER/FIGARDO/PLASTER_INT_12"
 			"uaxis" "[1 0 0 -96] 0.25"
 			"vaxis" "[-0 0 -1 -324.013] 0.2344"
 			"rotation" "0"
@@ -20292,30 +20292,14 @@ entity
 entity
 {
 	"id" "18125"
-	"classname" "prop_static"
+	"classname" "info_target"
 	"angles" "0 0 0"
-	"disableflashlight" "0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"enablelightbounce" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"generatelightmaps" "0"
-	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/props_trainstation/trashcan_indoor001b.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "tj_bin_spawn"
 	"origin" "27 322 -539"
 	editor
 	{
-		"color" "255 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3000]"
@@ -26579,27 +26563,6 @@ entity
 }
 entity
 {
-	"id" "22880"
-	"classname" "point_worldtext"
-	"angles" "-0 90 0"
-	"color" "255 255 255 255"
-	"message" "Radio song is temporary"
-	"orientation" "0"
-	"rainbow" "0"
-	"textsize" "3"
-	"textspacingX" "0"
-	"textspacingY" "0"
-	"origin" "132 134 -496"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -11268]"
-	}
-}
-entity
-{
 	"id" "23206"
 	"classname" "ttt_map_settings"
 	"angles" "0 0 0"
@@ -26614,6 +26577,35 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "23532"
+	"classname" "info_overlay"
+	"angles" "0 135 0"
+	"BasisNormal" "0 0 -1"
+	"BasisOrigin" "97 -191 -540"
+	"BasisU" "-0.707107 0.707107 0"
+	"BasisV" "0.707107 0.707107 0"
+	"EndU" "0"
+	"EndV" "1"
+	"fademindist" "-1"
+	"material" "mall_member/figardo/chet"
+	"sides" "24895"
+	"StartU" "1"
+	"StartV" "0"
+	"uv0" "-2.79547 -2.92151 0"
+	"uv1" "-2.79547 2.92151 0"
+	"uv2" "2.79547 2.92151 0"
+	"uv3" "2.79547 -2.92151 0"
+	"origin" "97 -191 -540"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
 	}
 }
 cameras

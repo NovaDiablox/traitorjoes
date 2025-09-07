@@ -1,6 +1,9 @@
 include("shared.lua")
 
-local text = "Press E to toggle radio."
+function ENT:UseOverride()
+end
+
+local text = "Press E to search bin."
 function ENT:TraitorJoeTargetID()
 	if IsValid(self:GetParent()) then return end
 
